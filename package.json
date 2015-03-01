@@ -1,0 +1,34 @@
+{
+  "name": "spellcheck-technical-word",
+  "description": "spellcheck a text by using technical-word-rules.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/azu/spellcheck-technical-word/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/spellcheck-technical-word.git"
+  },
+  "main": "lib/spellcheck-technical-word.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/spellcheck-technical-word/issues"
+  },
+  "dependencies": {
+    "technical-word-rules": "git://github.com/azu/technical-word-rules"
+  },
+  "devDependencies": {
+    "espower-loader": "^0.10.0",
+    "intelli-espower-loader": "^0.6.0",
+    "mocha": "^2.1.0",
+    "power-assert": "^0.10.2"
+  }
+}
