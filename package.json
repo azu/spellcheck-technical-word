@@ -23,6 +23,7 @@
     "url": "https://github.com/azu/spellcheck-technical-word/issues"
   },
   "dependencies": {
+    "structured-source": "^3.0.2",
     "technical-word-rules": "git://github.com/azu/technical-word-rules"
   },
   "devDependencies": {

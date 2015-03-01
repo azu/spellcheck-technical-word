@@ -9,6 +9,12 @@ describe("spellcheck-technical-word", function () {
             assert.equal(result.actual, "git");
             assert.equal(result.expected, "Git");
         });
+        it("should have padding{line,column}", function () {
+            var results = spellcheck("git");
+            var result = results.pop();
+            assert(result.paddingLine === 0);
+            assert(result.paddingColumn === 0);
+        });
     });
     context("when not found wrong word", function(){
         it("should return empty array", function () {

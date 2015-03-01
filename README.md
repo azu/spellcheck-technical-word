@@ -14,9 +14,25 @@ var results = spellcheck("git");
 assert(results.length > 0);
 var result = results.pop();
 /*
-{ actual: 'git', expected: 'Git', matchedStartIndex: 1 }
+{ actual: 'git', expected: 'Git', paddingLine: 0, paddingColumn:0 }
 */
 ```
+
+**Result data structure**
+
+```js
+/**
+ *
+ * @typedef {{actual: string, expected: string, paddingLine: number, paddingColumn: number}} SpellCheckResult
+ */
+var result = {
+    actual: "string",
+    expected: "string,
+    paddingLine: 0,// start with 0
+    paddingColumn: 0// start with 0
+};
+```
+
 
 Use case: [azu/textlint-rule-helper](https://github.com/azu/textlint-rule-helper "azu/textlint-rule-helper")
 
