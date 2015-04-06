@@ -22,4 +22,17 @@ describe("spellcheck-technical-word", function () {
             assert(results.length === 0);
         });
     })
+    context("when an expected word includes the pattern", function(){
+        it("finds wrong word", function () {
+            var results = spellcheck("ベンダ");
+            assert(results.length > 0);
+            var result = results.pop();
+            assert.equal(result.actual, "ベンダ");
+            assert.equal(result.expected, "ベンダー");
+        });
+        it("doesn't find correct word", function () {
+            var results = spellcheck("ベンダー");
+            assert(results.length === 0);
+        });
+    });
 });
