@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "structured-source": "^3.0.2",
-    "technical-word-rules": "git://github.com/azu/technical-word-rules"
+    "technical-word-rules": "^1.1.1"
   },
   "devDependencies": {
     "espower-loader": "^0.10.0",
