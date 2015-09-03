@@ -27,7 +27,7 @@ var result = results.pop();
  */
 var result = {
     actual: "string",
-    expected: "string,
+    expected: "string",
     paddingLine: 0,// start with 0
     paddingColumn: 0// start with 0
 };
