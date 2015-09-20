@@ -35,7 +35,7 @@ describe("spellcheck-technical-word", function () {
             assert.equal(result.expected, "ベンダー");
         });
         it("finds wrong word", function () {
-            var results = spellcheck("HTML Import should be HTML Imports");
+            var results = spellcheck("HTML Import");
             assert(results.length === 1);
             var result = results.pop();
             assert.equal(result.actual, "HTML Import");
