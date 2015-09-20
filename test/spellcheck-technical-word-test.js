@@ -34,6 +34,13 @@ describe("spellcheck-technical-word", function () {
             assert.equal(result.actual, "ベンダ");
             assert.equal(result.expected, "ベンダー");
         });
+        it("finds wrong word", function () {
+            var results = spellcheck("HTML Import");
+            assert(results.length === 1);
+            var result = results.pop();
+            assert.equal(result.actual, "HTML Import");
+            assert.equal(result.expected, "HTML Imports");
+        });
         it("doesn't find correct word", function () {
             var results = spellcheck("ベンダー");
             assert(results.length === 0);
