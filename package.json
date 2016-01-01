@@ -24,12 +24,12 @@
   },
   "dependencies": {
     "structured-source": "^3.0.2",
-    "technical-word-rules": "^1.1.1"
+    "technical-word-rules": "^1.4.1"
   },
   "devDependencies": {
-    "espower-loader": "^0.10.0",
-    "intelli-espower-loader": "^0.6.0",
+    "espower-loader": "^1.0.0",
+    "intelli-espower-loader": "^1.0.1",
     "mocha": "^2.1.0",
-    "power-assert": "^0.10.2"
+    "power-assert": "^1.2.0"
   }
 }
