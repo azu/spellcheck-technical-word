@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "structured-source": "^3.0.2",
-    "technical-word-rules": "^1.4.1"
+    "technical-word-rules": "^1.4.2"
   },
   "devDependencies": {
     "espower-loader": "^1.0.0",
