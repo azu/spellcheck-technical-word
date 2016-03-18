@@ -26,6 +26,23 @@ describe("spellcheck-technical-word", function () {
             assert(results.length === 0);
         });
     });
+    context("when multiple hit", function () {
+        it("should return multiple result", function () {
+            var texts = "git is language.\n" +
+                "test is language.\n" +
+                "browserify is bundler.";
+            var results = spellcheck(texts);
+            assert(results.length === 2);
+            var gitResult = results[0];
+            assert(gitResult.paddingIndex === 0);
+            assert(gitResult.paddingLine === 0);
+            assert(gitResult.paddingColumn === 0);
+            var browserifyResult = results[1];
+            assert(browserifyResult.paddingIndex === 35);
+            assert(browserifyResult.paddingLine === 2);
+            assert(browserifyResult.paddingColumn === 0);
+        });
+    });
     context("when an expected word includes the pattern", function () {
         it("finds wrong word", function () {
             var results = spellcheck("ベンダ");
